@@ -163,7 +163,7 @@ def user_stats(df):
 
     # TO DO: Display counts of gender
     if 'Gender' not in df.columns:
-        print('No gender information in selected dataset.')
+        print('No gender information in {}.'.format(city.title()))
     else:
         print('Counts of user gender:\n', df['Gender'].value_counts())
 
