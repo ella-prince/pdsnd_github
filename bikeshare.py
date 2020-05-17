@@ -48,7 +48,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    df = pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA[city.lower()])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
@@ -163,7 +163,7 @@ def user_stats(df):
 
     #Display counts of gender
     if 'Gender' not in df.columns:
-        print('No gender information in selected dataset.')
+        print('No gender information in {}.'.format(city.title()))
     else:
         print('Counts of user gender:\n', df['Gender'].value_counts())
 
