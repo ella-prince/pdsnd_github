@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+May 17, 2020
 
 ### Project Title
-Replace the Project Title
+Post U.S. bikeshare analysis on Github
 
 ### Description
-Describe what your project is about and what it does
+The project analyzes the bike-share data from three major cities of the United States (Washington, New York City and Chicago), and creates an interactive environment for users to search for indicated data on specific requirements.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity Programming for Data Science with Python Nano-Degree
